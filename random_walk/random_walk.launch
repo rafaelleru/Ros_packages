@@ -1,0 +1,4 @@
+<launch>
+<node name="stage" pkg="stage_ros" type="stageros" args="$(find stage_ros)/world/willow-erratic.world"/>
+<node name="deambulador" pkg="random_walk" type="deambulador" args="$(arg distance) $(arg r_velocity)"/>
+</launch>
